@@ -69,3 +69,13 @@ An iPhone 16 Pro / iOS 18.3 simulator showed the full shorter label with regular
 Standard EAS build `3f5a2c70-e583-4d45-9eff-51882aba7b1f`, build number 16, uses source `c627b0f`. Native config introspection, signed archive name assertions, recursive signature verification, and GitHub CI passed. Apple reports VALID and IN_BETA_TESTING, with the existing tester's group access verified.
 
 Build 16 replaced build 15 in App Review on October 31, 2026 at 20:09:09 UTC. Status is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. Review submission: `ff6926c9-28bd-46ad-85d8-8849f8d7ba0f`.
+
+# Build 17 — two ordinary spaces between words
+
+The installed name is `Poop  on  Phone`, with exactly two ordinary U+0020 spaces between each word in Expo `name` and native `CFBundleDisplayName`. The spoken name remains naturally spaced. The App Store title remains **Poop on Your Phone**.
+
+The iPhone 16 Pro / iOS 18.3 simulator displayed the full shorter label with visible word gaps after opening the app once. With the blue update dot present, iOS still compressed/truncated it. The operating system controls rendered spacing; this does not guarantee identical fitting on every device or with TestFlight indicators. See `verification/home-screen-double-spaces.png`.
+
+Standard EAS build `3ef29510-3588-4957-9787-b6613a6bba5e`, build number 17, uses source `afe1b80`. Config introspection, exact signed-archive name assertions, strict recursive signature verification, and GitHub CI passed. The JavaScript bundle hash is unchanged from build 16. Apple reports VALID and IN_BETA_TESTING. The internal group has access to all builds, and existing tester access was verified.
+
+Build 17 replaced build 16 in App Review on October 31, 2026 at 20:35:33 UTC. Status is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. Review submission: `96cf77ae-60c5-46df-9d5e-22e3d521f29d`. Build 16's release and name-validation records are preserved under `releases/`.
