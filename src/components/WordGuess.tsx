@@ -20,7 +20,7 @@ import {
 } from "../games/wordGuess";
 import { colors, fonts } from "../theme";
 const KEY = "poop-games.word.v1";
-const shades = { correct: "#3D694E", present: "#94751C", absent: "#61666B" };
+const shades = { correct: "#2454B8", present: "#AD326B", absent: "#34304B" };
 export function WordGuess() {
   const [game, setGame] = useState<DailyGame | null>(null),
     [input, setInput] = useState(""),
@@ -240,7 +240,7 @@ const s = StyleSheet.create({
     flex: 1,
     aspectRatio: 1,
     borderWidth: 1.5,
-    borderColor: "#D6D6D1",
+    borderColor: "#DCDFF0",
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 6,
@@ -266,13 +266,13 @@ const s = StyleSheet.create({
     flex: 1,
     minHeight: 44,
     borderRadius: 5,
-    backgroundColor: "#E9E9E5",
+    backgroundColor: "#EEF0FA",
     alignItems: "center",
     justifyContent: "center",
   },
   keyText: { fontFamily: fonts.bold, fontSize: 15, color: colors.ink },
   enter: {
-    backgroundColor: colors.ink,
+    backgroundColor: shades.correct,
     borderRadius: 8,
     alignItems: "center",
     padding: 14,

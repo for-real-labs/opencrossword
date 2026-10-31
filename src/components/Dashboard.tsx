@@ -28,7 +28,7 @@ const games: {
     title: "Word Guess Daily",
     caption: "Five letters. Six chances.",
     mark: "W",
-    color: "#E1EBDD",
+    color: "#E5EBFA",
   },
   {
     id: "raiders",

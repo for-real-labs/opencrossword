@@ -15,7 +15,7 @@ for device,w,h in [('iphone',1320,2868),('ipad',2064,2752)]:
     for old in dest.glob('*.png'):old.unlink()
     previews=[]
     for i,(a,b,subtitle,name) in enumerate(PANELS):
-        bg=['#F4F3ED','#EAE8E2','#E1EBDD','#E6E1F2'][i]
+        bg=['#F4F3ED','#EAE8E2','#E5EBFA','#E6E1F2'][i]
         panel=Image.new('RGB',(w,h),bg);d=ImageDraw.Draw(panel)
         margin=int(w*.075); logo=Image.open(ROOT/'assets/icon.png').convert('RGB').resize((120,120))
         panel.paste(logo,(margin,80));d.text((margin+150,114),'POOP GAMES',font=font(42,True),fill='#191919')
