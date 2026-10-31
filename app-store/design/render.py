@@ -14,11 +14,11 @@ for device,w,h in [('iphone',1320,2868),('ipad',2064,2752)]:
     # Remove only this renderer's previously generated exports, now replaced by four panels.
     for old in dest.glob('*.png'):old.unlink()
     previews=[]
+    wallpaper=Image.open(ROOT/"app-store/design/generated/continuous-blue-raspberry.png").convert("RGB").resize((w*4,h),Image.Resampling.LANCZOS)
     for i,(a,b,subtitle,name) in enumerate(PANELS):
-        bg='#E5EBFA'
-        panel=Image.new('RGB',(w,h),bg);d=ImageDraw.Draw(panel)
+        panel=wallpaper.crop((i*w,0,(i+1)*w,h));d=ImageDraw.Draw(panel)
         margin=int(w*.075); logo=Image.open(ROOT/'assets/icon.png').convert('RGB').resize((120,120))
-        panel.paste(logo,(margin,80));d.text((margin+150,114),'POOP GAMES',font=font(42,True),fill='#34304B')
+        panel.paste(logo,(margin,80));d.text((margin+150,114),'POOP ON YOUR PHONE',font=font(42,True),fill='#34304B')
         size=120 if device=='iphone' else 150;y=285
         for line in (a,b):d.text((margin,y),line,font=font(size,True),fill='#34304B');y+=size+10
         subsize=36 if device=='iphone' else 46
@@ -38,6 +38,8 @@ for device,w,h in [('iphone',1320,2868),('ipad',2064,2752)]:
         d.rounded_rectangle((x-8,y-8,x+cw+8,y+ch+8),radius=44,fill='#34304B')
         mask=Image.new('L',(cw,ch));ImageDraw.Draw(mask).rounded_rectangle((0,0,cw-1,ch-1),radius=36,fill=255)
         panel.paste(crop,(x,y),mask)
+        d.rounded_rectangle((margin-18,h-120,margin+600,h-55),radius=18,fill='#E5EBFA')
+        d.rounded_rectangle((w-margin-75,h-120,w-margin+18,h-55),radius=18,fill='#E5EBFA')
         d.text((margin,h-105),'100% FREE. NEVER ANY ADS.',font=font(32,True),fill='#34304B')
         d.text((w-margin-55,h-105),f'0{i+1}',font=font(32,True),fill='#34304B')
         out=dest/(name+'.png');panel.save(out,optimize=True)

@@ -12,5 +12,13 @@
     1024
   ],
   "cost": "No separate fal.ai spend; built-in image generation.",
-  "storePanels": "Original graphic composition with real native screenshots; no generated UI."
+  "storePanels": "Original graphic composition with real native screenshots; no generated UI.",
+  "wallpaper": {
+    "provider": "Built-in image_gen",
+    "asset": "app-store/design/generated/continuous-blue-raspberry.png",
+    "prompt": "One continuous panoramic pale-blue wallpaper with sweeping royal-blue, raspberry and plum ribbons, quiet top and central negative space. No text, panels, dividers, UI or devices. Slice one canvas into four adjacent portrait store images.",
+    "source": "exec-f7efde20-7cf7-45ea-a5df-8f2c7c82d092.png",
+    "cost": "Built-in image generation; no fal.ai spend",
+    "composition": "Single master resized once per device; exact adjacent crops at x=i*width. No per-panel background adjustment."
+  }
 }
