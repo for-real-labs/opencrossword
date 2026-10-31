@@ -1,12 +1,12 @@
 {
   "name": "Poop on your Phone",
   "subtitle": "Free games. Never any ads.",
-  "description": "We all poop. We all go on our phone. Play these games instead of brainrotting. Never any ads. All features 100% free.",
-  "keywords": "crossword,word,guess,daily,arcade,space,shooter,free,offline,puzzle,games",
+  "description": "We all poop. We all go on our phone. Play these games instead of brainrotting. Never any ads.\n\nPlay Crossword, Word Guess Daily, and Galactic Raiders \u2014 or create your own game. Describe an idea and turn it into a playable 2D or 3D game. Ask for changes, save your favorites, and play them from your dashboard. Three.js games are supported.\n\nThe three built-in games work offline. Game creation requires an internet connection and Sign in with Apple. New accounts receive 10 free creation credits; each successful creation or revision uses one credit. There are no purchases or subscriptions. Your created games are private to your account.",
+  "keywords": "crossword,word,guess,daily,arcade,space,shooter,free,puzzle,games,create,3d",
   "supportUrl": "https://for-real-labs.github.io/poop-games/",
   "privacyPolicyUrl": "https://for-real-labs.github.io/poop-games/#privacy",
   "copyright": "2026 Jake Johnson",
-  "reviewNotes": "No sign-in, payments, ads, tracking, or server connection. The dashboard opens to three games. Crossword retains daily newspaper grids and saved progress: tap New puzzle, then cells and letter keys. Word Guess Daily offers six guesses at a five-letter word, with colored feedback and local progress saved; a fresh word each local day. Galactic Raiders is an original arcade space shooter: tap Play, hold arrows to move and hold Fire to shoot. Pause/resume, waves, three lives, and a locally saved best score. All game content is bundled offline. No data is collected. Privacy/support opens the system browser.",
+  "reviewNotes": "The dashboard includes three bundled offline games and a private AI game authoring tool. Built-in games require no sign-in. To test creation: tap Create a game, use Sign in with Apple, enter a prompt (for example: Create a touch-controlled 3D cube collecting game), tap Create, and accept the explicit Anthropic data-sharing consent. Each new Apple account receives 10 free credits. A successful creation or revision costs 1 credit; failures are refunded. Play the result, save it to the dashboard, and request changes in the studio. HTML/CSS/JavaScript and Three.js run in an isolated web player with no native app credentials. Prompts and existing game code are sent to Anthropic only after consent; accounts, code, and credits are stored in Supabase. Users can withdraw AI permission, sign out, and delete their account and cloud games in the studio. Generated games are private: no public catalog, sharing, messaging, or other users content. No advertising, tracking, purchases, or subscriptions. Reviewers may use their own Apple account; there is no password login. Privacy/support is linked from the dashboard and studio.",
   "releaseType": "AFTER_APPROVAL",
   "price": "FREE"
 }

@@ -1,0 +1,56 @@
+{
+  "appId": "6826699052",
+  "versionId": "de95169d-6a42-4d71-aba3-da8da2ba366a",
+  "localizationId": "063aa70f-b5da-423d-93ae-bfca93340c2c",
+  "status": "WAITING_FOR_REVIEW",
+  "productionBuildId": "f4ed4f0a-d7d1-4265-9b6f-e5ddd98dce24",
+  "simulatorBuildId": "baa45881-39cb-46ed-821b-d3743cf15797",
+  "submissionId": "c54cd947-1a5c-4205-8d37-87848abd3d48",
+  "uploadStatus": "VALID",
+  "price": "FREE",
+  "privacy": "DATA_NOT_COLLECTED",
+  "releaseType": "AFTER_APPROVAL",
+  "territories": 175,
+  "buildNumber": "12",
+  "sourceCommit": "49531c08ef306431b05c57ec0e98016b1e1d752c",
+  "appleBuildId": "921586d8-5c1c-4773-b4c9-3dca02ad9363",
+  "packaging": "Standard EAS cloud production build",
+  "archiveSha256": "76fb78ae9f0c9986c6628eac34a7059348765a584f786ab0b4b9311657c78f87",
+  "bundleSha256": "a79e741fad88dcea56bfea1c78ee74dca22c9e98e40585e3d766a7b15d3c2206",
+  "reviewStatus": "WAITING_FOR_REVIEW",
+  "name": "Poop on your Phone",
+  "storeScreenshots": {
+    "iphone": [
+      "poop-flow-01-dashboard.png",
+      "poop-flow-02-crossword.png",
+      "poop-flow-03-word.png",
+      "poop-flow-04-raiders.png"
+    ],
+    "ipad": [
+      "poop-flow-01-dashboard.png",
+      "poop-flow-02-crossword.png",
+      "poop-flow-03-word.png",
+      "poop-flow-04-raiders.png"
+    ]
+  },
+  "expoOwner": "jjohnson5253",
+  "expoProjectId": "58f0a11e-e3d9-4539-9549-69dd0fe8cc35",
+  "previousExpoProjectId": "0052d217-6108-470d-bd31-b508a63ba306",
+  "previousRelease": "app-store/releases/build-11.json",
+  "validation": "app-store/poop-games-validation.json",
+  "testFlight": {
+    "group": "Team (Expo)",
+    "groupId": "86feff11-cb06-4f5b-8896-cbaeacfeaba3",
+    "internalBuildState": "IN_BETA_TESTING",
+    "buildAssigned": true,
+    "existingTesterVerified": true
+  },
+  "requestedName": "Poop on your Phone",
+  "previousReviewWithdrawn": true,
+  "reviewSubmissionId": "694b5f36-6199-434d-93ae-b327000184f4",
+  "selectedBuildId": "921586d8-5c1c-4773-b4c9-3dca02ad9363",
+  "submittedDate": "2026-10-31T17:50:13.93Z",
+  "artworkCommit": "61e46c2a5f85961b195ad53aa6d4d61e4bd42656",
+  "installedDisplayName": "Poop on your Phone",
+  "homeScreenFit": "iOS truncates the exact name in iPhone 16 Pro testing; there is no supported per-app font-size or label-width override."
+}

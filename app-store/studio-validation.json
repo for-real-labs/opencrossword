@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-31",
+  "buildNumber": "14",
+  "sourceCommit": "6bce140070e1a890705f7c6a4def455cdfd58790",
+  "productionBuildId": "b5bab67e-72a1-4e1e-9bad-f249bae47029",
+  "automatedTests": {
+    "vitest": 43,
+    "python": 2,
+    "server": 3,
+    "storeExports": 3
+  },
+  "typecheck": "PASS",
+  "iosExport": "PASS",
+  "githubCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41227891914",
+  "signatureVerification": "codesign --verify --deep --strict PASS",
+  "appleSignInEntitlement": "Default; production profile ACTIVE",
+  "installedDisplayName": "Poop on your phone",
+  "archiveSha256": "afd6a43b8a34e495850b87d64630bd08bcbfa28f09525254556837d58c416d75",
+  "bundleSha256": "7035be6b71baaa709de59d0dc00831f6858969b23bf1d2289a19249d0bafd0eb",
+  "nativeChecks": [
+    "Explicit Anthropic consent shown before generation; cancellation retained 10 credits.",
+    "Consent accepted; real Anthropic request created 3D Cube Collector and deducted one credit.",
+    "Exact production Hermes bundle installed into compatible EAS simulator binary; account and pending/completed job survived relaunch.",
+    "Generated game saved to dashboard and loaded its start screen.",
+    "Saved Three.js game rendered on iPad.",
+    "Apple sign-in control invokes native authorization sheet; simulator has no Apple ID configured."
+  ],
+  "nativeMethod": "Compatible SDK 57 EAS simulator binary, production Hermes bundle. Temporary disposable QA identity was injected only into a separate simulator bundle before the production-bundle verification. Production IPA is an unmodified EAS native build.",
+  "appleSignInLimitation": "A real Apple account login on physical hardware has not been exercised in this environment. Native entitlement, bundle identifier, Supabase provider configuration and authorization sheet verified.",
+  "privacy": {
+    "published": true,
+    "linkedToUser": [
+      "Email Address",
+      "User ID",
+      "Gameplay Content",
+      "Other User Content",
+      "Product Interaction"
+    ],
+    "purposes": [
+      "App Functionality"
+    ],
+    "tracking": false,
+    "explicitAIConsent": true
+  },
+  "ageRating": "18+ developer override; user-generated content declared",
+  "pagesDeployment": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41227891127",
+  "appStore": {
+    "name": "Poop on your Phone",
+    "appleBuildId": "dc510b4b-4718-47f6-8a4e-ac2c6db788e7",
+    "buildNumber": "14",
+    "reviewSubmissionId": "4109be9f-a14e-4d5f-8f22-d3bd76348c27",
+    "reviewStatus": "WAITING_FOR_REVIEW",
+    "status": "WAITING_FOR_REVIEW",
+    "releaseType": "AFTER_APPROVAL",
+    "selectedBuildId": "dc510b4b-4718-47f6-8a4e-ac2c6db788e7",
+    "submittedDate": "2026-10-31T18:17:59.859Z"
+  },
+  "screenshots": "Twelve screenshots COMPLETE: original four panels plus two native creator screenshots per device class."
+}
