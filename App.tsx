@@ -27,7 +27,11 @@ import { colors, fonts } from "./src/theme";
 import { Dashboard, Screen } from "./src/components/Dashboard";
 import { WordGuess } from "./src/components/WordGuess";
 import { GalacticRaiders } from "./src/components/GalacticRaiders";
+import { useStudio } from "./src/studio/useStudio";
+import { GameStudio } from "./src/components/GameStudio";
 export default function App() {
+  const studio = useStudio();
+  const [createdId, setCreatedId] = useState<string | null>(null);
   const [screen, setScreen] = useState<Screen>("dashboard");
   useEffect(() => {
     const sub = BackHandler.addEventListener("hardwareBackPress", () => {
@@ -133,7 +137,26 @@ export default function App() {
                 </Text>
               </Pressable>
             )}
-            {screen === "dashboard" && <Dashboard onOpen={setScreen} />}
+            {screen === "dashboard" && (
+              <Dashboard
+                onOpen={(next) => {
+                  setCreatedId(null);
+                  setScreen(next);
+                }}
+                savedGames={studio.games.filter((g) => g.saved)}
+                onPlay={(id) => {
+                  setCreatedId(id);
+                  setScreen("studio");
+                }}
+              />
+            )}
+            {screen === "studio" && (
+              <GameStudio
+                studio={studio}
+                initialId={createdId}
+                onSaved={() => setScreen("dashboard")}
+              />
+            )}
             {screen === "word" && <WordGuess />}
             {screen === "raiders" && <GalacticRaiders />}
             {screen === "crossword" && error && (

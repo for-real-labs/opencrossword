@@ -10,6 +10,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm ci --prefix server
+      - run: npm --prefix server test
       - run: npm run typecheck
       - run: npm test
       - run: npx expo export --platform ios

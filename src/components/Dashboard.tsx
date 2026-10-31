@@ -8,7 +8,7 @@ import {
   Linking,
 } from "react-native";
 import { colors, fonts } from "../theme";
-export type Screen = "dashboard" | "crossword" | "word" | "raiders";
+export type Screen = "dashboard" | "crossword" | "word" | "raiders" | "studio";
 const games: {
   id: Screen;
   title: string;
@@ -38,7 +38,15 @@ const games: {
     color: colors.highlight,
   },
 ];
-export function Dashboard({ onOpen }: { onOpen: (screen: Screen) => void }) {
+export function Dashboard({
+  onOpen,
+  savedGames,
+  onPlay,
+}: {
+  onOpen: (screen: Screen) => void;
+  savedGames: { id: string; title: string }[];
+  onPlay: (id: string) => void;
+}) {
   return (
     <ScrollView contentContainerStyle={s.page}>
       <View style={s.top}>
@@ -51,7 +59,7 @@ export function Dashboard({ onOpen }: { onOpen: (screen: Screen) => void }) {
       <Text style={s.subtitle}>Less scrolling. More playing.</Text>
       <View style={s.label}>
         <Text style={s.eyebrow}>PICK A GAME</Text>
-        <Text style={s.small}>03 games</Text>
+        <Text style={s.small}>{3 + savedGames.length} games</Text>
       </View>
       {games.map((g) => (
         <Pressable
@@ -67,6 +75,38 @@ export function Dashboard({ onOpen }: { onOpen: (screen: Screen) => void }) {
           <View style={s.copy}>
             <Text style={s.game}>{g.title}</Text>
             <Text style={s.caption}>{g.caption}</Text>
+          </View>
+          <Text style={s.arrow}>↗</Text>
+        </Pressable>
+      ))}
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => onOpen("studio")}
+        style={s.card}
+      >
+        <View style={s.icon}>
+          <Text style={s.mark}>+</Text>
+        </View>
+        <View style={s.copy}>
+          <Text style={s.game}>Create a game</Text>
+          <Text style={s.caption}>Dream it. Build it. Play it.</Text>
+        </View>
+        <Text style={s.arrow}>↗</Text>
+      </Pressable>
+      {savedGames.map((game) => (
+        <Pressable
+          key={game.id}
+          accessibilityRole="button"
+          accessibilityLabel={game.title}
+          onPress={() => onPlay(game.id)}
+          style={s.card}
+        >
+          <View style={[s.icon, { backgroundColor: colors.highlight }]}>
+            <Text style={s.mark}>✧</Text>
+          </View>
+          <View style={s.copy}>
+            <Text style={s.game}>{game.title}</Text>
+            <Text style={s.caption}>Made by you</Text>
           </View>
           <Text style={s.arrow}>↗</Text>
         </Pressable>

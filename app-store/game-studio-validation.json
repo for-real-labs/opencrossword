@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-31",
+  "branch": "feat/create-games",
+  "automated": {
+    "vitest": 43,
+    "python": 2,
+    "server": 3,
+    "typecheck": "PASS",
+    "expoDependencies": "PASS",
+    "iosExport": "PASS",
+    "webExport": "PASS"
+  },
+  "liveBackend": [
+    "Unauthenticated and non-Apple rejection",
+    "Client credit mutation denied by RLS",
+    "Idempotent charge and concurrent refund",
+    "Three.js generation and revision via Anthropic",
+    "Saving preserves dashboard membership across revisions",
+    "Cross-account game and job access denied",
+    "Verified owner unlimited and zero-credit rejection checked in rolled-back SQL transaction"
+  ],
+  "native": [
+    "Expo Go SDK 57: iPhone dashboard, credits and drafts with disposable admin-created test identity",
+    "Three.js WebGL renders and touch increases score",
+    "Save returns to dashboard and adds game; count becomes four",
+    "Saved game remains after terminating/relaunching Expo Go and reopens from dashboard",
+    "EAS-built standalone iPad app with final local production JS bundle: dashboard and creator render; native Apple button opens Apple Account Settings prompt (simulator has no signed-in Apple account)."
+  ],
+  "appleCapability": "APPLE_ID_AUTH enabled and re-read on bundle 8Z4P2DXV69",
+  "railway": {
+    "project": "2c67b953-e4d1-4f6e-adb0-33d62cce6189",
+    "service": "66ed7b37-b4df-4ed2-a4ba-828da9579b3d",
+    "deployment": "ddb37f15-3aaf-458d-ac0a-a45ff5c03c6a",
+    "status": "SUCCESS",
+    "health": "PASS"
+  },
+  "supabase": "buyypwfajcaowhcggmxs",
+  "simulatorBuild": {
+    "id": "339699bd-997c-4bf0-a960-25efbf4af1ce",
+    "status": "FINISHED",
+    "finalLocalBundleSha256": "15505fa7d47d70efcee5cff70f92851273ad1c958e6270e3cc698bd6381213d8",
+    "note": "Final JS bundle rebuilt locally against unchanged EAS-built native modules after the refresh-order fix; no distribution archive modified."
+  },
+  "limitations": [
+    "Real Apple authorization requires an Apple account on a device; synthetic test identities do not validate that interaction.",
+    "Local Xcode uses Swift 6.0; SDK 57 requires Swift 6.2. Native simulator build therefore used EAS.",
+    "No device distribution build, TestFlight upload, or App Store submission was requested or performed. Regenerate distribution provisioning with Apple sign-in before a device release."
+  ]
+}
