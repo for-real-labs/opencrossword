@@ -39,3 +39,13 @@ Apple accepted the user-selected store title **Poop on your Phone**. The install
 Standard EAS build `17d110fa-db1b-408d-914f-56463fd99bfc`, build number 11, uses committed app source `0141905`. Artwork is committed at `61e46c2`. Build 10 was superseded by the user’s shared-theme request and was not submitted to Apple. Build 11 passed recursive signature verification and Apple processing as VALID. Its exact production bundle was checked in the compatible simulator app, including retained word guesses. All 42 game tests, two Python tests, three store-export tests, type checking, and GitHub CI pass.
 
 Build 11 was submitted on October 31, 2026 at 17:25:20 UTC. Apple reports WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. The title conflict is resolved. This is submitted, not yet publicly live. Review submission: `24d338a4-cd29-447b-848d-58f54d988439`. See release-status.json for verified IDs and hashes.
+
+# Build 12 — exact installed display name
+
+The installed name now matches the App Store title, **Poop on your Phone**. Both Expo `name` and the native `CFBundleDisplayName` are explicitly set. Expo config introspection and the signed archive confirm the exact string; there are no app-level localized name overrides. Bundle ID and existing app data remain unchanged.
+
+The exact name was installed and visually inspected on an iPhone 16 Pro simulator running iOS 18.3. SpringBoard still truncates it. iOS controls icon-label sizing; the app has no supported font-size or label-width override. This release sets the requested name but does not claim the complete text will fit on every Home Screen.
+
+Standard EAS build `f4ed4f0a-d7d1-4265-9b6f-e5ddd98dce24` uses source `49531c0` and build number 12. Strict signature verification, all 42 game tests, two Python tests, type checking, and GitHub CI passed. Apple reports VALID and IN_BETA_TESTING, with the existing tester enrolled in the assigned internal group.
+
+Build 12 replaced build 11 in App Review on October 31, 2026 at 17:50:13 UTC. The verified state is WAITING_FOR_REVIEW, with AFTER_APPROVAL automatic public release. Review submission: `694b5f36-6199-434d-93ae-b327000184f4`. All work from this release is pushed to main; unrelated work in the separate development checkout is preserved.
