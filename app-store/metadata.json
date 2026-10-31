@@ -1,12 +1,12 @@
 {
-  "name": "Crossword: No Ads",
-  "subtitle": "100% free. No ads.",
-  "description": "100% free. No ads. Just daily crosswords.\n\nA minimalist crossword app with one new puzzle each day.\n\n\u2022 3,000 full-size 15 \u00d7 15 crosswords\n\u2022 Newspaper-style grids with 70\u201382 Across and Down clues\n\u2022 Pinch to zoom in on the grid\n\u2022 Automatic progress saves\n\u2022 Continue unfinished puzzles anytime\n\u2022 Keep completed puzzles\n\u2022 Works offline\n\nNo account. No subscriptions. No purchases.\n\nA new puzzle unlocks at local midnight. Your puzzle library never repeats.",
-  "keywords": "crossword,daily,newspaper,word,puzzle,free,offline,brain,relax,spelling,letters",
-  "supportUrl": "https://for-real-labs.github.io/opencrossword/",
-  "privacyPolicyUrl": "https://for-real-labs.github.io/opencrossword/#privacy",
+  "name": "Poop Games",
+  "subtitle": "Free games. Never any ads.",
+  "description": "We all poop. We all go on our phone. Play these games instead of brainrotting. Never any ads. All features 100% free.",
+  "keywords": "crossword,word,guess,daily,arcade,space,shooter,free,offline,puzzle,games",
+  "supportUrl": "https://for-real-labs.github.io/poop-games/",
+  "privacyPolicyUrl": "https://for-real-labs.github.io/poop-games/#privacy",
   "copyright": "2026 Jake Johnson",
-  "reviewNotes": "No sign-in, payments, ads, tracking, or server connection. Tap New puzzle to start today's crossword. Tap a square to select it; tap again at a crossing to change direction. Use the letter keys, Clues, and Check. Pinch the grid to zoom. Existing mini puzzles remain available with their saved progress. Home lists unfinished and completed puzzles. One new puzzle can be started per local calendar day; returning to any saved puzzle is unlimited. The app includes 3,000 full-size 15\u00d715 newspaper-style crosswords, with symmetric blocks and every letter crossed. The next puzzle ID and start date are preserved in Keychain; progress is stored locally. No data is collected. The privacy/support link opens the system browser.",
+  "reviewNotes": "No sign-in, payments, ads, tracking, or server connection. The dashboard opens to three games. Crossword retains daily newspaper grids and saved progress: tap New puzzle, then cells and letter keys. Word Guess Daily offers six guesses at a five-letter word, with colored feedback and local progress saved; a fresh word each local day. Galactic Raiders is an original arcade space shooter: tap Play, hold arrows to move and hold Fire to shoot. Pause/resume, waves, three lives, and a locally saved best score. All game content is bundled offline. No data is collected. Privacy/support opens the system browser.",
   "releaseType": "AFTER_APPROVAL",
   "price": "FREE"
 }

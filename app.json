@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "OpenCrossword",
+    "name": "Poop Games",
     "slug": "daily-crossword",
     "owner": "jjohnson5253",
     "version": "1.0.0",
@@ -8,7 +8,7 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "icon": "./assets/icon.png",
-    "backgroundColor": "#F7F6F0",
+    "backgroundColor": "#FFFFFF",
     "ios": {
       "bundleIdentifier": "com.forreallabs.dailycrossword",
       "buildNumber": "6",

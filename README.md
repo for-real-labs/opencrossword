@@ -1,4 +1,7 @@
-# OpenCrossword
+# Poop Games
+
+Three offline games: Crossword, Word Guess Daily, and Galactic Raiders. No accounts, ads, analytics, subscriptions, or purchases. Existing crossword saves retain their original storage keys.
+
 
 100% free. No ads. Just daily crosswords. A minimal native Expo iOS app. One new crossword per local day, 3,000 original bundled puzzles, automatic saves, and a simple home screen with unfinished puzzles ordered by last opened and a completed archive. No login, ads, purchases, network requirement, or analytics.
 
@@ -40,4 +43,4 @@ npx eas-cli submit -p ios --profile production
 
 Signing and submission credentials are managed by the existing Expo account. Never commit private keys or signing certificates. Apple must approve a submission before it appears on the App Store.
 
-Support/privacy: https://for-real-labs.github.io/opencrossword/
+Support/privacy: https://for-real-labs.github.io/poop-games/

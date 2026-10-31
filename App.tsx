@@ -5,6 +5,8 @@ import {
   AppState,
   StyleSheet,
   ActivityIndicator,
+  Pressable,
+  BackHandler,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
@@ -22,7 +24,19 @@ import { Home } from "./src/components/Home";
 import { PuzzleScreen } from "./src/components/PuzzleScreen";
 import { Button } from "./src/components/Button";
 import { colors, fonts } from "./src/theme";
+import { Dashboard, Screen } from "./src/components/Dashboard";
+import { WordGuess } from "./src/components/WordGuess";
+import { GalacticRaiders } from "./src/components/GalacticRaiders";
 export default function App() {
+  const [screen, setScreen] = useState<Screen>("dashboard");
+  useEffect(() => {
+    const sub = BackHandler.addEventListener("hardwareBackPress", () => {
+      if (screen === "dashboard") return false;
+      setScreen("dashboard");
+      return true;
+    });
+    return () => sub.remove();
+  }, [screen]);
   const [fontsLoaded, fontError] = useFonts({
     DMSans_400Regular,
     DMSans_500Medium,
@@ -98,7 +112,31 @@ export default function App() {
           </View>
         ) : (
           <>
-            {error && (
+            {screen !== "dashboard" && (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Back to games"
+                onPress={() => {
+                  setSelected(null);
+                  setScreen("dashboard");
+                }}
+                style={{ paddingHorizontal: 24, paddingVertical: 12 }}
+              >
+                <Text
+                  style={{
+                    fontFamily: fonts.bold,
+                    color: colors.ink,
+                    fontSize: 14,
+                  }}
+                >
+                  ‹ Games
+                </Text>
+              </Pressable>
+            )}
+            {screen === "dashboard" && <Dashboard onOpen={setScreen} />}
+            {screen === "word" && <WordGuess />}
+            {screen === "raiders" && <GalacticRaiders />}
+            {screen === "crossword" && error && (
               <View accessibilityRole="alert" style={s.error}>
                 <Text style={s.errorText}>{error}</Text>
                 <Button
@@ -111,7 +149,8 @@ export default function App() {
                 />
               </View>
             )}
-            {state &&
+            {screen === "crossword" &&
+              state &&
               (game ? (
                 <PuzzleScreen
                   key={game.puzzleId}

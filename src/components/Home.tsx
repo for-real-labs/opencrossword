@@ -79,7 +79,7 @@ export function Home({
             <Text style={s.brandText}>100% FREE · NO ADS</Text>
           </View>
           <Text accessibilityRole="header" style={s.title} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75}>
-            OpenCrossword
+            Crossword
           </Text>
           <Text style={s.date}>
             {now.toLocaleDateString("en-US", {
@@ -159,7 +159,7 @@ export function Home({
             label="Privacy & support"
             onPress={() => {
               void Linking.openURL(
-                "https://for-real-labs.github.io/opencrossword/"
+                "https://for-real-labs.github.io/poop-games/"
               ).catch(onError);
             }}
           />

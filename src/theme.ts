@@ -1,7 +1,7 @@
 export const colors = {
-  paper: "#F7F6F0",
-  ink: "#213E34",
-  muted: "#69756D",
+  paper: "#FFFFFF",
+  ink: "#191919",
+  muted: "#73736D",
   line: "#DDE1D5",
   green: "#264B3E",
   lime: "#D8ED9D",
