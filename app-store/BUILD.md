@@ -49,3 +49,13 @@ The exact name was installed and visually inspected on an iPhone 16 Pro simulato
 Standard EAS build `f4ed4f0a-d7d1-4265-9b6f-e5ddd98dce24` uses source `49531c0` and build number 12. Strict signature verification, all 42 game tests, two Python tests, type checking, and GitHub CI passed. Apple reports VALID and IN_BETA_TESTING, with the existing tester enrolled in the assigned internal group.
 
 Build 12 replaced build 11 in App Review on October 31, 2026 at 17:50:13 UTC. The verified state is WAITING_FOR_REVIEW, with AFTER_APPROVAL automatic public release. Review submission: `694b5f36-6199-434d-93ae-b327000184f4`. All work from this release is pushed to main; unrelated work in the separate development checkout is preserved.
+
+# Build 15 — visible Home Screen spacing and title case
+
+The canonical App Store/Expo name is **Poop on Your Phone**. Native `CFBundleDisplayName` uses U+2800 blank separators because iOS collapsed ordinary and typographic spaces when fitting the long icon label. `CFBundleSpokenName` retains ordinary spaces. The signed native archive contains these exact values; there are no localized name overrides.
+
+On an isolated iPhone 16 Pro running iOS 18.3, the final production-icon simulator app retained visible gaps and the ordinary-space accessibility name. A normal-space Spotlight query also found a test app using the same separators. A 19-character narrow-letter control kept its ordinary spaces while an 11-character wide-letter control lost them, demonstrating that character count alone does not explain fitting. The full requested name still truncates; this release fixes visible separation, not the available label width. See `verification/home-screen-visible-spacing.png` and `home-screen-name-validation.json`.
+
+Standard EAS production build `1336b706-9226-4c32-9c7b-1d023ffa1602`, build number 15, uses source `1ca0b85`. Config introspection, strict recursive signature verification, and GitHub CI passed. Existing Game Studio gameplay/backend validation remains recorded separately. Apple reports VALID and IN_BETA_TESTING, with access verified for the existing requested tester.
+
+Build 15 replaced build 14 in App Review on October 31, 2026 at 18:35:07 UTC. The verified state is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. The App Store title is also **Poop on Your Phone**. Review submission: `39033b43-c764-477e-b80d-c3d302696316`.
