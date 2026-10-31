@@ -29,7 +29,7 @@ function MiniGrid({ done }: { done: boolean }) {
               backgroundColor: [2, 6].includes(i)
                 ? colors.ink
                 : done
-                ? colors.lime
+                ? colors.selected
                 : colors.line,
             },
           ]}
@@ -212,7 +212,7 @@ const s = StyleSheet.create({
     marginTop: 10,
   },
   hero: {
-    backgroundColor: "#EBEEDF",
+    backgroundColor: colors.highlight,
     padding: 22,
     borderRadius: 24,
     marginTop: 32,
@@ -225,7 +225,7 @@ const s = StyleSheet.create({
     marginBottom: 22,
   },
   heroLabel: { fontFamily: fonts.medium, fontSize: 19, color: colors.ink },
-  sun: { fontSize: 30, color: colors.green },
+  sun: { fontSize: 30, color: colors.primary },
   heroSub: { fontFamily: fonts.body, fontSize: 15, color: colors.muted },
   section: {
     fontFamily: fonts.medium,

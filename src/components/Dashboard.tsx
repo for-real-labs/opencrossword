@@ -21,21 +21,21 @@ const games: {
     title: "Crossword",
     caption: "A fresh grid. Every day.",
     mark: "#",
-    color: "#EAE8E2",
+    color: colors.highlight,
   },
   {
     id: "word",
     title: "Word Guess Daily",
     caption: "Five letters. Six chances.",
     mark: "W",
-    color: "#E5EBFA",
+    color: colors.highlight,
   },
   {
     id: "raiders",
     title: "Galactic Raiders",
     caption: "Tiny ships. Big high scores.",
     mark: "✦",
-    color: "#E6E1F2",
+    color: colors.highlight,
   },
 ];
 export function Dashboard({ onOpen }: { onOpen: (screen: Screen) => void }) {

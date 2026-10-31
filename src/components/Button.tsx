@@ -33,7 +33,7 @@ export function Button({
 }
 const s = StyleSheet.create({
   button: {
-    backgroundColor: colors.green,
+    backgroundColor: colors.primary,
     borderRadius: 18,
     minHeight: 56,
     paddingHorizontal: 22,

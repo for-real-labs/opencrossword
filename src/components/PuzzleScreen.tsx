@@ -183,9 +183,9 @@ export function PuzzleScreen({
                           backgroundColor: colors.highlight,
                         },
                         selected === key &&
-                          !done && { backgroundColor: colors.lime },
-                        done && { backgroundColor: "#F0F5E6" },
-                        error && { backgroundColor: "#F8DAD1" },
+                          !done && { backgroundColor: colors.selected },
+                        done && { backgroundColor: colors.highlight },
+                        error && { backgroundColor: colors.errorSurface },
                       ]}
                     >
                       {number && (
@@ -231,7 +231,7 @@ export function PuzzleScreen({
           accessibilityLiveRegion="polite"
           style={[
             s.caption,
-            done && { color: colors.green, fontFamily: fonts.medium },
+            done && { color: colors.primary, fontFamily: fonts.medium },
           ]}
         >
           {caption}
@@ -298,7 +298,7 @@ export function PuzzleScreen({
                   style={({ pressed }) => [
                     s.key,
                     height < 750 && { height: 44 },
-                    pressed && { backgroundColor: colors.lime },
+                    pressed && { backgroundColor: colors.selected },
                   ]}
                 >
                   <Text allowFontScaling={false} style={s.keyText}>
@@ -446,7 +446,7 @@ const s = StyleSheet.create({
   key: {
     flex: 1,
     height: 48,
-    backgroundColor: "#E6E9DF",
+    backgroundColor: colors.surface,
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",

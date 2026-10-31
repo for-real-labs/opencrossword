@@ -108,7 +108,7 @@ export default function App() {
         <StatusBar style="dark" />
         {(!fontsLoaded && !fontError) || (!state && !error) ? (
           <View style={s.center}>
-            <ActivityIndicator color={colors.green} />
+            <ActivityIndicator color={colors.primary} />
           </View>
         ) : (
           <>
@@ -185,7 +185,7 @@ const s = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 16,
-    backgroundColor: "#F8DAD1",
+    backgroundColor: colors.errorSurface,
   },
   errorText: {
     fontFamily: fonts.body,

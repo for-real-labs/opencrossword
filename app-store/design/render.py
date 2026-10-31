@@ -15,14 +15,14 @@ for device,w,h in [('iphone',1320,2868),('ipad',2064,2752)]:
     for old in dest.glob('*.png'):old.unlink()
     previews=[]
     for i,(a,b,subtitle,name) in enumerate(PANELS):
-        bg=['#F4F3ED','#EAE8E2','#E5EBFA','#E6E1F2'][i]
+        bg='#E5EBFA'
         panel=Image.new('RGB',(w,h),bg);d=ImageDraw.Draw(panel)
         margin=int(w*.075); logo=Image.open(ROOT/'assets/icon.png').convert('RGB').resize((120,120))
-        panel.paste(logo,(margin,80));d.text((margin+150,114),'POOP GAMES',font=font(42,True),fill='#191919')
+        panel.paste(logo,(margin,80));d.text((margin+150,114),'POOP GAMES',font=font(42,True),fill='#34304B')
         size=120 if device=='iphone' else 150;y=285
-        for line in (a,b):d.text((margin,y),line,font=font(size,True),fill='#191919');y+=size+10
+        for line in (a,b):d.text((margin,y),line,font=font(size,True),fill='#34304B');y+=size+10
         subsize=36 if device=='iphone' else 46
-        d.text((margin,y+30),subtitle,font=font(subsize),fill='#51514D')
+        d.text((margin,y+30),subtitle,font=font(subsize),fill='#716B83')
         source=ROOT/'app-store/screenshots/poop'/device/(name+'.png')
         src=Image.open(source).convert('RGB')
         if device=='iphone':box=(0,180,src.width,src.height-90)
@@ -35,11 +35,11 @@ for device,w,h in [('iphone',1320,2868),('ipad',2064,2752)]:
         scale=min(maxw/crop.width,maxh/crop.height)
         cw,ch=round(crop.width*scale),round(crop.height*scale)
         crop=crop.resize((cw,ch),Image.Resampling.LANCZOS);x=(w-cw)//2;y=800
-        d.rounded_rectangle((x-8,y-8,x+cw+8,y+ch+8),radius=44,fill='#191919')
+        d.rounded_rectangle((x-8,y-8,x+cw+8,y+ch+8),radius=44,fill='#34304B')
         mask=Image.new('L',(cw,ch));ImageDraw.Draw(mask).rounded_rectangle((0,0,cw-1,ch-1),radius=36,fill=255)
         panel.paste(crop,(x,y),mask)
-        d.text((margin,h-105),'100% FREE. NEVER ANY ADS.',font=font(32,True),fill='#191919')
-        d.text((w-margin-55,h-105),f'0{i+1}',font=font(32,True),fill='#191919')
+        d.text((margin,h-105),'100% FREE. NEVER ANY ADS.',font=font(32,True),fill='#34304B')
+        d.text((w-margin-55,h-105),f'0{i+1}',font=font(32,True),fill='#34304B')
         out=dest/(name+'.png');panel.save(out,optimize=True)
         previews.append(panel.resize((330,round(h*330/w))))
         manifest.append({'file':str(out.relative_to(ROOT)),'size':[w,h],'source':str(source.relative_to(ROOT)),'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'crop':box})

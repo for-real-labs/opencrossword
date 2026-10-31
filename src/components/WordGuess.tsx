@@ -20,7 +20,11 @@ import {
 } from "../games/wordGuess";
 import { colors, fonts } from "../theme";
 const KEY = "poop-games.word.v1";
-const shades = { correct: "#2454B8", present: "#AD326B", absent: "#34304B" };
+const shades = {
+  correct: colors.primary,
+  present: colors.accent,
+  absent: colors.ink,
+};
 export function WordGuess() {
   const [game, setGame] = useState<DailyGame | null>(null),
     [input, setInput] = useState(""),
@@ -122,7 +126,7 @@ export function WordGuess() {
                     },
                   ]}
                 >
-                  <Text style={[s.letter, result && { color: "#fff" }]}>
+                  <Text style={[s.letter, result && { color: colors.white }]}>
                     {word[c]}
                   </Text>
                 </View>
@@ -166,7 +170,9 @@ export function WordGuess() {
                   pressed && { opacity: 0.55 },
                 ]}
               >
-                <Text style={[s.keyText, marks[letter] && { color: "#fff" }]}>
+                <Text
+                  style={[s.keyText, marks[letter] && { color: colors.white }]}
+                >
                   {letter}
                 </Text>
               </Pressable>
@@ -240,7 +246,7 @@ const s = StyleSheet.create({
     flex: 1,
     aspectRatio: 1,
     borderWidth: 1.5,
-    borderColor: "#DCDFF0",
+    borderColor: colors.line,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 6,
@@ -266,7 +272,7 @@ const s = StyleSheet.create({
     flex: 1,
     minHeight: 44,
     borderRadius: 5,
-    backgroundColor: "#EEF0FA",
+    backgroundColor: colors.surface,
     alignItems: "center",
     justifyContent: "center",
   },
