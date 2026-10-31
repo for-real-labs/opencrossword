@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { AppState } from "react-native";
+import { AppState, Alert } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import type { Session } from "@supabase/supabase-js";
 import * as Apple from "expo-apple-authentication";
@@ -110,6 +110,26 @@ export function useStudio() {
     // Persist the request ID before sending so a lost response can be retried without another charge.
     const requestKey = `studio.request.${uid}`;
     try {
+      const consentKey = `studio.ai-consent.${uid}`;
+      if (!(await AsyncStorage.getItem(consentKey))) {
+        const allowed = await new Promise<boolean>((resolve) =>
+          Alert.alert(
+            "Share with Anthropic?",
+            "To build or revise your game, your prompt and existing game code are sent to Anthropic. This includes any personal information you put in them. Your prompts and games are saved to your account in Supabase. Your Apple account credentials are never sent to Anthropic.",
+            [
+              {
+                text: "Cancel",
+                style: "cancel",
+                onPress: () => resolve(false),
+              },
+              { text: "Allow & create", onPress: () => resolve(true) },
+            ],
+            { cancelable: true, onDismiss: () => resolve(false) }
+          )
+        );
+        if (!allowed) return;
+        await AsyncStorage.setItem(consentKey, "v1");
+      }
       const stored = await AsyncStorage.getItem(requestKey);
       const previous = stored ? JSON.parse(stored) : null;
       const payload =
@@ -139,6 +159,13 @@ export function useStudio() {
       return false;
     }
   }
+  async function withdrawConsent() {
+    await AsyncStorage.removeItem(`studio.ai-consent.${user.current}`);
+    Alert.alert(
+      "Permission withdrawn",
+      "We’ll ask again before sending another prompt to Anthropic."
+    );
+  }
   async function signOut() {
     const result = await auth?.auth.signOut();
     if (result?.error) setError(result.error.message);
@@ -165,6 +192,7 @@ export function useStudio() {
     save,
     refresh,
     deleteAccount,
+    withdrawConsent,
   };
 }
 export type Studio = ReturnType<typeof useStudio>;

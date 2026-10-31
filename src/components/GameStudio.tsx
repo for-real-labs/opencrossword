@@ -8,6 +8,7 @@ import {
   ActivityIndicator,
   Platform,
   Alert,
+  Linking,
   KeyboardAvoidingView,
 } from "react-native";
 import * as Apple from "expo-apple-authentication";
@@ -176,6 +177,20 @@ export function GameStudio({
                 />
               ))}
             <View style={s.account}>
+              <Button
+                quiet
+                label="Privacy"
+                onPress={() =>
+                  void Linking.openURL(
+                    "https://for-real-labs.github.io/poop-games/#privacy"
+                  )
+                }
+              />
+              <Button
+                quiet
+                label="Withdraw AI permission"
+                onPress={() => void studio.withdrawConsent()}
+              />
               <Button
                 quiet
                 label="Sign out"
