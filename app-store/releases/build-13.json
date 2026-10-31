@@ -1,0 +1,16 @@
+{
+  "appId": "6826699052",
+  "buildNumber": "13",
+  "productionBuildId": "713c1994-e8fc-49ac-a786-cdd326d7dbd5",
+  "submissionId": "19c829df-f696-4f14-8298-6ad165766f09",
+  "appleBuildId": "d1c7cb4b-5b9e-4865-bd78-2358c216ded9",
+  "sourceCommit": "77ca68045d6c2f338780c17344a6029bccee846d",
+  "installedDisplayName": "Poop on your phone",
+  "uploadStatus": "VALID",
+  "testFlight": "IN_BETA_TESTING",
+  "archiveSha256": "9d138af24b622ef0a582c35cc881dd39a5abe3505d4a438ca3515f29fd485355",
+  "bundleSha256": "91a4135c33b750d8f9bf85a2c1abda5891d91a821651424e2a1b519192d61982",
+  "reviewStatus": "NOT_SUBMITTED",
+  "reviewNote": "Build 13 was not submitted: the listing is concurrently being updated for the newer Game Studio release, build 14.",
+  "validation": "app-store/home-screen-name-validation.json"
+}
