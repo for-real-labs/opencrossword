@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-10-31T21:06:13.985349+00:00",
+  "sourceCommit": "518ecea4dcd783fa844048c68585010bcf0793f9",
+  "deployment": "LIVE",
+  "backend": "https://game-api-production-1f28.up.railway.app",
+  "supabaseProject": "buyypwfajcaowhcggmxs",
+  "migration": "202610310004_unlimited_game_access",
+  "migrationSourceMatchesDeployment": true,
+  "privateRecipientAllowanceConfigured": true,
+  "ownerAllowancePreserved": true,
+  "recipientHasMatchingAuthAccount": false,
+  "requiresVerifiedSharedEmail": true,
+  "clientCannotReadOrModifyAllowances": true,
+  "clientCannotCallPrivilegedAccountRPC": true,
+  "existingAccountsReconcile": true,
+  "backendHealth": "PASS",
+  "postgres15LocalRegression": "PASS",
+  "postgres17CIRegression": "PASS",
+  "fullCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41241677031",
+  "nativeUpdateRequired": false,
+  "compatibleCurrentTestFlightBuild": "18",
+  "coverage": [
+    "Existing and future verified accounts receive configured allowances",
+    "Client metadata cannot grant access",
+    "Unverified and changed email addresses do not inherit allowances",
+    "More than ten generations and revisions complete without credit charges",
+    "Uncharged failures do not refund extra credits",
+    "Idempotency, single pending job and game ownership remain enforced",
+    "Normal accounts retain credit charges, refunds and exhaustion checks",
+    "Removing an allowance revokes unlimited access on refresh"
+  ]
+}
