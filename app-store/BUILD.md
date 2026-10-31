@@ -79,3 +79,13 @@ The iPhone 16 Pro / iOS 18.3 simulator displayed the full shorter label with vis
 Standard EAS build `3ef29510-3588-4957-9787-b6613a6bba5e`, build number 17, uses source `afe1b80`. Config introspection, exact signed-archive name assertions, strict recursive signature verification, and GitHub CI passed. The JavaScript bundle hash is unchanged from build 16. Apple reports VALID and IN_BETA_TESTING. The internal group has access to all builds, and existing tester access was verified.
 
 Build 17 replaced build 16 in App Review on October 31, 2026 at 20:35:33 UTC. Status is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. Review submission: `96cf77ae-60c5-46df-9d5e-22e3d521f29d`. Build 16's release and name-validation records are preserved under `releases/`.
+
+# Build 18 — three ordinary spaces between words
+
+The installed name is `Poop   on   Phone`, with exactly three ordinary U+0020 spaces between each word in Expo `name` and native `CFBundleDisplayName`. The spoken name remains naturally spaced. The App Store title remains **Poop on Your Phone**. Build 17's signed archive was rechecked and confirmed to contain exactly two ordinary spaces between each word.
+
+The iPhone 16 Pro / iOS 18.3 simulator displayed the full shorter label after opening the app once. Three configured spaces still render as compact gaps. With the blue update dot present, iOS compressed/truncated it. This change sets the exact requested spacing without claiming that iOS will display three full-width spaces. See `verification/home-screen-three-spaces.png`.
+
+Standard EAS build `deecdc60-0107-4ade-a252-d074ace025b7`, build number 18, uses source `1e9f7c5`. Config introspection, exact signed-archive name assertions, strict recursive signature verification, and GitHub CI passed. The JavaScript bundle hash is unchanged from build 17. Apple reports VALID and IN_BETA_TESTING. The internal group has access to all builds, and existing tester access was verified.
+
+Build 18 replaced build 17 in App Review on October 31, 2026 at 20:52:47 UTC. Status is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. Review submission: `8e285eed-3421-4a25-a8d7-52046abc3663`. Build 17's release and name-validation records are preserved under `releases/`.
