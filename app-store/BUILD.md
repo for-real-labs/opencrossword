@@ -31,3 +31,11 @@ The app now opens to a three-game dashboard: Crossword (existing saves preserved
 Normal EAS production build `fa8c9d0b-7dc5-45ac-814b-33ea3827cf48` completed and passed strict recursive signature verification. Apple accepted build 9 as VALID; the existing internal TestFlight group can test it. Source was pushed to main at `ab1e534`; GitHub CI passed. Support/privacy is live at https://for-real-labs.github.io/poop-games/.
 
 The previous App Review submission was withdrawn for replacement. Apple rejected the exact store title “Poop Games” because another account owns it. The installed name is Poop Games, but the store title remains Crossword: No Ads until Jake chooses an alternative. Build 9 is selected with AFTER_APPROVAL release; the replacement has NOT been submitted and is NOT live. All eight screenshots are COMPLETE and ordered. Finish by setting an available user-approved store name, then submitting the selected version to App Review. See release-status.json and poop-games-validation.json.
+
+# Build 11 — shared theme and continuous store wallpaper
+
+Apple accepted the user-selected store title **Poop on your Phone**. The installed app remains **Poop Games**. All three games now share the blue/raspberry/plum palette in `src/theme.ts`; the former Wordle-like and separate crossword/arcade colors are removed. Each store image set is sliced from one continuous generated wallpaper and composed with current native captures. Eight images reached COMPLETE, and edge-pixel tests verify continuity.
+
+Standard EAS build `17d110fa-db1b-408d-914f-56463fd99bfc`, build number 11, uses committed app source `0141905`. Artwork is committed at `61e46c2`. Build 10 was superseded by the user’s shared-theme request and was not submitted to Apple. Build 11 passed recursive signature verification and Apple processing as VALID. Its exact production bundle was checked in the compatible simulator app, including retained word guesses. All 42 game tests, two Python tests, three store-export tests, type checking, and GitHub CI pass.
+
+Build 11 was submitted on October 31, 2026 at 17:25:20 UTC. Apple reports WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. The title conflict is resolved. This is submitted, not yet publicly live. Review submission: `24d338a4-cd29-447b-848d-58f54d988439`. See release-status.json for verified IDs and hashes.

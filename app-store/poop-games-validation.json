@@ -3,7 +3,7 @@
   "automatedTests": {
     "vitest": 42,
     "python": 2,
-    "storeExports": 2
+    "storeExports": 3
   },
   "typecheck": "PASS",
   "expoDoctor": "18/18 PASS",
@@ -13,15 +13,19 @@
     "iPad Pro 13-inch: dashboard and all three games inspected; crossword and word input work",
     "Word Guess Daily: two guesses persisted across terminate and relaunch; scoring colors visible",
     "Galactic Raiders: hold fire scores hits; lives decrease; explicit and background pause verified",
-    "Exact cloud-built production Hermes bundle loaded in compatible existing simulator native binary; dashboard renders with correct logo"
+    "Exact cloud-built production Hermes bundle loaded in compatible existing simulator native binary; dashboard renders with correct logo",
+    "Shared theme verified in all three games on iPhone and iPad",
+    "Exact build 11 production bundle installed in matching simulator binary; dashboard opens and saved word guesses restore with new colors"
   ],
   "nativeMethod": "Existing compatible Expo SDK 57 simulator binary with new production bundle and assets. Production archive itself is a fresh EAS native build.",
   "signatureVerification": "codesign --verify --deep --strict PASS",
-  "productionBundleSha256": "fcfe35bbd2fc0ca44fb86cfb735ebb18a6992af03021c5e877e64cf4aaddb81c",
-  "sourceCommit": "ab1e534df2b5dd5e59e8dffff8f9e20bbf135f0e",
-  "buildSourceNote": "Build started from working tree before commit. Subsequent app-source changes were formatting only.",
-  "githubCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41217833097",
+  "productionBundleSha256": "99bcbca769c4518cffc0a04b5785da8ff1062bba2655d710e59460d2ba9c7b9d",
+  "sourceCommit": "0141905ed1391e179fc098704a1dba1ce402107e",
+  "buildSourceNote": "Build 11 produced from committed shared-theme source. Later changes only update store artwork, captures, and release records.",
+  "githubCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41224158529",
   "pagesDeployment": "PASS; live support/privacy page returns HTTP 200 with new branding",
-  "screenshots": "Eight assets COMPLETE and ordered on Apple",
-  "appStore": "Build 9 VALID and selected; AFTER_APPROVAL; submission pending alternate store title"
+  "screenshots": "Eight continuous-wallpaper panels COMPLETE and ordered on Apple; adjacent-edge pixel continuity test passes.",
+  "appStore": "Build 11 VALID; selected and submitted. WAITING_FOR_REVIEW; AFTER_APPROVAL.",
+  "theme": "Shared blue #2454B8, raspberry #AD326B, plum #34304B and their light tints across all games.",
+  "storeName": "Poop on your Phone"
 }
