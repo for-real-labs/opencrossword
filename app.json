@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Poop on Your Phone",
+    "name": "Poop on Phone",
     "slug": "daily-crossword",
     "owner": "jjohnson5253",
     "version": "1.0.0",
@@ -15,8 +15,8 @@
       "supportsTablet": true,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "CFBundleDisplayName": "Poop\u2800on\u2800Your\u2800Phone",
-        "CFBundleSpokenName": "Poop on Your Phone"
+        "CFBundleDisplayName": "Poop on Phone",
+        "CFBundleSpokenName": "Poop on Phone"
       },
       "usesAppleSignIn": true
     },
