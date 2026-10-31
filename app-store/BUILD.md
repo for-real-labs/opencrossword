@@ -23,3 +23,11 @@ The 15×15 crossword update uses the new Expo project `58f0a11e-e3d9-4539-9549-6
 Build 8 is a normal EAS production build. Build 7 was reserved during credentials setup but never uploaded. See `release-status.json` for the current build and Apple submission state. This app still requires native releases; OTA updates have not been enabled.
 
 Build 8 finished successfully, passed strict signature verification, and was accepted by Apple as `VALID`. Its exact production Hermes bundle was also checked in the existing compatible simulator binary. It is available to the existing internal TestFlight group. The old build 6 review was withdrawn, both newspaper-grid feature screenshots were uploaded and verified `COMPLETE`, and build 8 was submitted to App Review with automatic release after approval.
+
+# Build 9 — Poop Games
+
+The app now opens to a three-game dashboard: Crossword (existing saves preserved), Word Guess Daily (six guesses and locally saved daily progress), and Galactic Raiders (original arcade artwork, waves, lives, pause, and high score). New black-and-white toilet/phone branding and eight native-capture store panels replace the crossword-only listing assets. The exact requested description is saved on Apple.
+
+Normal EAS production build `fa8c9d0b-7dc5-45ac-814b-33ea3827cf48` completed and passed strict recursive signature verification. Apple accepted build 9 as VALID; the existing internal TestFlight group can test it. Source was pushed to main at `ab1e534`; GitHub CI passed. Support/privacy is live at https://for-real-labs.github.io/poop-games/.
+
+The previous App Review submission was withdrawn for replacement. Apple rejected the exact store title “Poop Games” because another account owns it. The installed name is Poop Games, but the store title remains Crossword: No Ads until Jake chooses an alternative. Build 9 is selected with AFTER_APPROVAL release; the replacement has NOT been submitted and is NOT live. All eight screenshots are COMPLETE and ordered. Finish by setting an available user-approved store name, then submitting the selected version to App Review. See release-status.json and poop-games-validation.json.

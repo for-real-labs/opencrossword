@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-31",
+  "automatedTests": {
+    "vitest": 42,
+    "python": 2,
+    "storeExports": 2
+  },
+  "typecheck": "PASS",
+  "expoDoctor": "18/18 PASS",
+  "iosExport": "PASS",
+  "nativeChecks": [
+    "iPhone 16 Pro Max: dashboard and all games; existing mini crossword and saved F retained; new newspaper puzzle opens",
+    "iPad Pro 13-inch: dashboard and all three games inspected; crossword and word input work",
+    "Word Guess Daily: two guesses persisted across terminate and relaunch; scoring colors visible",
+    "Galactic Raiders: hold fire scores hits; lives decrease; explicit and background pause verified",
+    "Exact cloud-built production Hermes bundle loaded in compatible existing simulator native binary; dashboard renders with correct logo"
+  ],
+  "nativeMethod": "Existing compatible Expo SDK 57 simulator binary with new production bundle and assets. Production archive itself is a fresh EAS native build.",
+  "signatureVerification": "codesign --verify --deep --strict PASS",
+  "productionBundleSha256": "fcfe35bbd2fc0ca44fb86cfb735ebb18a6992af03021c5e877e64cf4aaddb81c",
+  "sourceCommit": "ab1e534df2b5dd5e59e8dffff8f9e20bbf135f0e",
+  "buildSourceNote": "Build started from working tree before commit. Subsequent app-source changes were formatting only.",
+  "githubCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41217833097",
+  "pagesDeployment": "PASS; live support/privacy page returns HTTP 200 with new branding",
+  "screenshots": "Eight assets COMPLETE and ordered on Apple",
+  "appStore": "Build 9 VALID and selected; AFTER_APPROVAL; submission pending alternate store title"
+}

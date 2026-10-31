@@ -2,45 +2,48 @@
   "appId": "6826699052",
   "versionId": "de95169d-6a42-4d71-aba3-da8da2ba366a",
   "localizationId": "063aa70f-b5da-423d-93ae-bfca93340c2c",
-  "status": "WAITING_FOR_REVIEW",
-  "productionBuildId": "13e53f0a-1845-4318-91f1-2e1d3acf0df0",
+  "status": "PREPARE_FOR_SUBMISSION",
+  "productionBuildId": "fa8c9d0b-7dc5-45ac-814b-33ea3827cf48",
   "simulatorBuildId": "baa45881-39cb-46ed-821b-d3743cf15797",
-  "submissionId": "a42709a3-e7e8-4405-a03f-eec287e69345",
+  "submissionId": "5c041e4e-0567-468d-80f4-c05728fedd9f",
   "uploadStatus": "VALID",
   "price": "FREE",
   "privacy": "DATA_NOT_COLLECTED",
   "releaseType": "AFTER_APPROVAL",
   "territories": 175,
-  "buildNumber": "8",
-  "sourceCommit": "50e4f26ecdf7dc5c7fbdc72034a43bb2ffb49b81",
-  "appleBuildId": "49b250ba-8280-4776-9234-2cc80c50c7af",
+  "buildNumber": "9",
+  "sourceCommit": "ab1e534df2b5dd5e59e8dffff8f9e20bbf135f0e",
+  "appleBuildId": "a4a9aa54-ff19-43ed-a006-f98f974a7fb6",
   "packaging": "Standard EAS cloud production build",
-  "archiveSha256": "bfbb5b4a280e852e0922a5dddf1378f5bbeab3e82e0f2fe1161231f92eba3310",
-  "bundleSha256": "7877a842a60ddce74781c9ab7dffdeb194a332a5f6f496b74d1e962c64e51b00",
-  "reviewSubmissionId": "564ea8ff-4dc0-4fd2-b119-3329a84ea13c",
-  "submittedDate": "2026-10-30T14:17:04.057Z",
-  "reviewStatus": "WAITING_FOR_REVIEW",
+  "archiveSha256": "c56af6f9c813147d0396543344ab5663e2aea78548991a5342e2f198e883d4d6",
+  "bundleSha256": "fcfe35bbd2fc0ca44fb86cfb735ebb18a6992af03021c5e877e64cf4aaddb81c",
+  "reviewStatus": "NOT_SUBMITTED_NAME_CONFLICT",
   "name": "Crossword: No Ads",
   "storeScreenshots": {
     "iphone": [
-      "01-free.png",
-      "02-daily-newspaper.png",
-      "03-progress.png"
+      "poop-01-dashboard.png",
+      "poop-02-crossword.png",
+      "poop-03-word.png",
+      "poop-04-raiders.png"
     ],
     "ipad": [
-      "01-free.png",
-      "02-daily-newspaper.png",
-      "03-progress.png"
+      "poop-01-dashboard.png",
+      "poop-02-crossword.png",
+      "poop-03-word.png",
+      "poop-04-raiders.png"
     ]
   },
   "expoOwner": "jjohnson5253",
   "expoProjectId": "58f0a11e-e3d9-4539-9549-69dd0fe8cc35",
   "previousExpoProjectId": "0052d217-6108-470d-bd31-b508a63ba306",
-  "previousRelease": "app-store/releases/build-6.json",
-  "validation": "app-store/newspaper-validation.json",
+  "previousRelease": "app-store/releases/build-8.json",
+  "validation": "app-store/poop-games-validation.json",
   "testFlight": {
     "group": "Team (Expo)",
     "groupId": "86feff11-cb06-4f5b-8896-cbaeacfeaba3",
     "internalBuildState": "IN_BETA_TESTING"
-  }
+  },
+  "requestedName": "Poop Games",
+  "nameBlocker": "Apple rejected exact title as already used on another account. Awaiting user choice of alternate store title; installed app is Poop Games.",
+  "previousReviewWithdrawn": true
 }
