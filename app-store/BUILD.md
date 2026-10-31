@@ -59,3 +59,13 @@ On an isolated iPhone 16 Pro running iOS 18.3, the final production-icon simulat
 Standard EAS production build `1336b706-9226-4c32-9c7b-1d023ffa1602`, build number 15, uses source `1ca0b85`. Config introspection, strict recursive signature verification, and GitHub CI passed. Existing Game Studio gameplay/backend validation remains recorded separately. Apple reports VALID and IN_BETA_TESTING, with access verified for the existing requested tester.
 
 Build 15 replaced build 14 in App Review on October 31, 2026 at 18:35:07 UTC. The verified state is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. The App Store title is also **Poop on Your Phone**. Review submission: `39033b43-c764-477e-b80d-c3d302696316`.
+
+# Build 16 — shorter label with normal spaces
+
+The installed Home Screen name is now **Poop on Phone**, with one ordinary U+0020 space between each word. Expo `name`, `CFBundleDisplayName`, and `CFBundleSpokenName` all contain that exact string. The U+2800 blank separators are removed. The App Store title is **Poop on Your Phone**.
+
+An iPhone 16 Pro / iOS 18.3 simulator showed the full shorter label with regular spaces and no ellipsis after opening the app once. Before first launch, the blue recently-updated dot reduced the available room and the label compressed/truncated. This verifies the ordinary Home Screen appearance, not every TestFlight indicator or device setting. See `verification/home-screen-short-name.png`; build 15's validation is preserved in `releases/build-15-name-validation.json`.
+
+Standard EAS build `3f5a2c70-e583-4d45-9eff-51882aba7b1f`, build number 16, uses source `c627b0f`. Native config introspection, signed archive name assertions, recursive signature verification, and GitHub CI passed. Apple reports VALID and IN_BETA_TESTING, with the existing tester's group access verified.
+
+Build 16 replaced build 15 in App Review on October 31, 2026 at 20:09:09 UTC. Status is WAITING_FOR_REVIEW with AFTER_APPROVAL automatic release. Review submission: `ff6926c9-28bd-46ad-85d8-8849f8d7ba0f`.
