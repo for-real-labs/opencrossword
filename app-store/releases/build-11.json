@@ -1,0 +1,52 @@
+{
+  "appId": "6826699052",
+  "versionId": "de95169d-6a42-4d71-aba3-da8da2ba366a",
+  "localizationId": "063aa70f-b5da-423d-93ae-bfca93340c2c",
+  "status": "WAITING_FOR_REVIEW",
+  "productionBuildId": "17d110fa-db1b-408d-914f-56463fd99bfc",
+  "simulatorBuildId": "baa45881-39cb-46ed-821b-d3743cf15797",
+  "submissionId": "b94d8656-4608-496d-9297-7fe9cd2a46a6",
+  "uploadStatus": "VALID",
+  "price": "FREE",
+  "privacy": "DATA_NOT_COLLECTED",
+  "releaseType": "AFTER_APPROVAL",
+  "territories": 175,
+  "buildNumber": "11",
+  "sourceCommit": "0141905ed1391e179fc098704a1dba1ce402107e",
+  "appleBuildId": "ecabb4fb-4688-470b-bf95-a9fcdce5bf9c",
+  "packaging": "Standard EAS cloud production build",
+  "archiveSha256": "8032a7dca6689559bd98a85e311588006d4cb3f958f62fb4cdab2680bf4ddde2",
+  "bundleSha256": "99bcbca769c4518cffc0a04b5785da8ff1062bba2655d710e59460d2ba9c7b9d",
+  "reviewStatus": "WAITING_FOR_REVIEW",
+  "name": "Poop on your Phone",
+  "storeScreenshots": {
+    "iphone": [
+      "poop-flow-01-dashboard.png",
+      "poop-flow-02-crossword.png",
+      "poop-flow-03-word.png",
+      "poop-flow-04-raiders.png"
+    ],
+    "ipad": [
+      "poop-flow-01-dashboard.png",
+      "poop-flow-02-crossword.png",
+      "poop-flow-03-word.png",
+      "poop-flow-04-raiders.png"
+    ]
+  },
+  "expoOwner": "jjohnson5253",
+  "expoProjectId": "58f0a11e-e3d9-4539-9549-69dd0fe8cc35",
+  "previousExpoProjectId": "0052d217-6108-470d-bd31-b508a63ba306",
+  "previousRelease": "app-store/releases/build-9.json",
+  "validation": "app-store/poop-games-validation.json",
+  "testFlight": {
+    "group": "Team (Expo)",
+    "groupId": "86feff11-cb06-4f5b-8896-cbaeacfeaba3",
+    "internalBuildState": "IN_BETA_TESTING"
+  },
+  "requestedName": "Poop on your Phone",
+  "previousReviewWithdrawn": true,
+  "reviewSubmissionId": "24d338a4-cd29-447b-848d-58f54d988439",
+  "selectedBuildId": "ecabb4fb-4688-470b-bf95-a9fcdce5bf9c",
+  "submittedDate": "2026-10-31T17:25:20.335Z",
+  "artworkCommit": "61e46c2a5f85961b195ad53aa6d4d61e4bd42656"
+}

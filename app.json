@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Poop Games",
+    "name": "Poop on your Phone",
     "slug": "daily-crossword",
     "owner": "jjohnson5253",
     "version": "1.0.0",
@@ -14,7 +14,8 @@
       "buildNumber": "6",
       "supportsTablet": true,
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleDisplayName": "Poop on your Phone"
       },
       "usesAppleSignIn": true
     },

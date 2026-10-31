@@ -19,13 +19,25 @@
   ],
   "nativeMethod": "Existing compatible Expo SDK 57 simulator binary with new production bundle and assets. Production archive itself is a fresh EAS native build.",
   "signatureVerification": "codesign --verify --deep --strict PASS",
-  "productionBundleSha256": "99bcbca769c4518cffc0a04b5785da8ff1062bba2655d710e59460d2ba9c7b9d",
-  "sourceCommit": "0141905ed1391e179fc098704a1dba1ce402107e",
-  "buildSourceNote": "Build 11 produced from committed shared-theme source. Later changes only update store artwork, captures, and release records.",
-  "githubCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41224158529",
+  "productionBundleSha256": "a79e741fad88dcea56bfea1c78ee74dca22c9e98e40585e3d766a7b15d3c2206",
+  "sourceCommit": "49531c08ef306431b05c57ec0e98016b1e1d752c",
+  "buildSourceNote": "Build 12 is a fresh native EAS build from the committed Home Screen name change. Game code, dependencies and store artwork are unchanged from the previously validated release.",
+  "githubCI": "PASS https://github.com/for-real-labs/poop-games/actions/runs/41225744257",
   "pagesDeployment": "PASS; live support/privacy page returns HTTP 200 with new branding",
   "screenshots": "Eight continuous-wallpaper panels COMPLETE and ordered on Apple; adjacent-edge pixel continuity test passes.",
-  "appStore": "Build 11 VALID; selected and submitted. WAITING_FOR_REVIEW; AFTER_APPROVAL.",
+  "appStore": "Build 12 VALID; selected and submitted. WAITING_FOR_REVIEW; AFTER_APPROVAL.",
   "theme": "Shared blue #2454B8, raspberry #AD326B, plum #34304B and their light tints across all games.",
-  "storeName": "Poop on your Phone"
+  "storeName": "Poop on your Phone",
+  "homeScreenName": {
+    "requested": "Poop on your Phone",
+    "expoName": "Poop on your Phone",
+    "generatedCFBundleDisplayName": "Poop on your Phone",
+    "configIntrospection": "PASS",
+    "simulator": "iPhone 16 Pro, iOS 18.3",
+    "fit": "Exact name is truncated by iOS on the Home Screen; no supported per-app label font-size or width setting is available.",
+    "method": "Installed compatible simulator app with exact CFBundleDisplayName and visually inspected SpringBoard.",
+    "signedArchiveCFBundleDisplayName": "Poop on your Phone",
+    "signedArchiveBuildNumber": "12"
+  },
+  "testFlight": "Build 12 IN_BETA_TESTING; assigned to Team (Expo), with the existing requested tester enrolled."
 }
